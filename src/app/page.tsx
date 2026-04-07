@@ -617,7 +617,7 @@ export default function Home() {
             transition={{ duration: 0.4, delay: 0.1 }}
           >
             <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Ad</span>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-3">Advertisement - Upgrade to Premium for ad-free experience</p>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-3">Advertisement</p>
             {/* Google AdSense Banner - inspirational */}
             <div className="bg-white dark:bg-gray-900 rounded-lg p-4 w-full">
               <ins
