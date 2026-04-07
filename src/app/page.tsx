@@ -465,7 +465,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >Transform Your Life Today</motion.h4>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-3 gap-8">
               <motion.div 
                 className="flex justify-center"
                 initial={{ opacity: 0, x: -30 }}
@@ -491,10 +491,33 @@ export default function Home() {
               </motion.div>
               <motion.div 
                 className="flex justify-center"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '600px', width: '100%', maxWidth: '500px' }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image
+                    src="/4 - No Texts.png"
+                    alt="App Experience Clean 4"
+                    width={500}
+                    height={650}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
+              </motion.div>
+              <motion.div 
+                className="flex justify-center"
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 whileHover={{ scale: 1.05 }}
               >
                 <motion.div
@@ -816,7 +839,7 @@ export default function Home() {
           >
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Or scan to download the app</p>
             <motion.div
-              className="relative w-40 h-40 rounded-xl shadow-lg overflow-hidden"
+              className="relative w-64 h-64 rounded-xl shadow-lg overflow-hidden"
               whileHover={{ scale: 1.1, boxShadow: "0 20px 40px rgba(0,0,0,0.2)" }}
               transition={{ duration: 0.3 }}
             >
@@ -825,7 +848,7 @@ export default function Home() {
                 alt="Scan QR Code to Download App"
                 fill
                 className="rounded-xl object-cover"
-                sizes="160px"
+                sizes="256px"
               />
             </motion.div>
           </motion.div>

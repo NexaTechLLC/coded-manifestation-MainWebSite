@@ -14,12 +14,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coded Manifestation",
-  description: "Transform your mindset with daily affirmations",
+  title: "Coded Manifestation - Transform Your Mindset",
+  description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change through the power of daily affirmations.",
+  keywords: ["affirmations", "manifestation", "mindfulness", "meditation", "positivity", "wellness"],
+  authors: [{ name: "NexaTech LLC" }],
+  creator: "NexaTech LLC",
+  publisher: "NexaTech LLC",
+  metadataBase: new URL("https://www.codedmanifestations.com"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Coded Manifestation - Transform Your Mindset",
+    description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change.",
+    url: "https://www.codedmanifestations.com",
+    siteName: "Coded Manifestation",
+    images: [
+      {
+        url: "/1.png",
+        width: 1200,
+        height: 630,
+        alt: "Coded Manifestation - Transform Your Mindset",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Coded Manifestation - Transform Your Mindset",
+    description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change.",
+    images: ["/1.png"],
+    creator: "@codedmanifestation",
+  },
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: [
+      { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon.png", sizes: "96x96", type: "image/png" },
+    ],
+    shortcut: "/favicon.png",
+    apple: [
+      { url: "/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
