@@ -26,34 +26,35 @@ export default function Home() {
           sizes="100vw"
         />
         {/* Navigation */}
-        <nav className="relative z-10 flex justify-end items-center px-6 py-4">
-          <div className="flex items-center gap-4">
+        <nav className="relative z-10 flex justify-end items-center px-4 sm:px-6 py-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <ThemeToggle />
             <a
               href="https://app.codedmanifestations.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 text-white hover:text-gray-200 transition-colors bg-black bg-opacity-50 backdrop-blur-sm rounded-lg"
+              className="flex items-center gap-2 px-3 py-2 sm:px-4 text-white hover:text-gray-200 transition-colors bg-black bg-opacity-50 backdrop-blur-sm rounded-lg text-sm sm:text-base"
             >
               <ArrowRight className="w-4 h-4" />
-              Get Started
+              <span className="hidden sm:inline">Get Started</span>
+              <span className="sm:hidden">Start</span>
             </a>
           </div>
         </nav>
       
         {/* Hero Content */}
-        <div className="relative max-w-4xl mx-auto px-6 pt-0 pb-42 flex flex-col justify-center min-h-screen">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 pt-0 pb-20 sm:pb-32 flex flex-col justify-center min-h-screen">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-8 rounded-2xl shadow-2xl border border-purple-700/30"
+            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30"
           >
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl font-bold text-white mb-6 text-center drop-shadow-lg"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 text-center drop-shadow-lg"
             >
               Transform Your Mindset with
               <motion.span 
@@ -69,7 +70,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-xl text-gray-100 dark:text-gray-300 mb-8 max-w-2xl mx-auto text-center drop-shadow-md"
+              className="text-lg sm:text-xl text-gray-100 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto text-center drop-shadow-md"
             >
               Cultivate positivity, boost confidence, and create lasting change through the power of daily affirmations.
             </motion.p>
@@ -79,16 +80,16 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 1 }}
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(249, 115, 22, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-orange-500 dark:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-orange-600 dark:hover:bg-orange-700 transition-colors flex items-center gap-2 mx-auto shadow-lg"
+              className="bg-orange-500 dark:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-orange-600 dark:hover:bg-orange-700 transition-colors flex items-center gap-2 mx-auto shadow-lg text-sm sm:text-base"
             >
-              <Download className="w-5 h-5" />
+              <Download className="w-4 h-4 sm:w-5 sm:h-5" />
               Download Now
             </motion.button>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+              className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <motion.a
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -147,13 +148,13 @@ export default function Home() {
       </section>
 
       {/* Today's Affirmations */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">
             Today {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl">
@@ -181,14 +182,14 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Why Choose CODED MANIFESTATIONS™️?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 sm:mb-8">Why Choose CODED MANIFESTATIONS™️?</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 icon: <Star className="w-12 h-12 text-yellow-500 mb-4" />,
@@ -228,11 +229,11 @@ export default function Home() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
                 whileHover={{ 
-                  scale: 1.05, 
+                  scale: 1.03, 
                   y: -5,
                   boxShadow: "0 20px 40px rgba(0,0,0,0.15)"
                 }}
-                className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all cursor-pointer group"
+                className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm hover:shadow-lg transition-all cursor-pointer group"
               >
                 <motion.div
                   initial={{ scale: 0 }}
@@ -242,7 +243,7 @@ export default function Home() {
                 >
                   {feature.icon}
                 </motion.div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
               </motion.div>
             ))}
@@ -250,8 +251,8 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Product Details Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      {/* Product Details */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -262,7 +263,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center"
+            className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center"
           >
             App Detailed Information
           </motion.h2>
@@ -271,7 +272,7 @@ export default function Home() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl font-semibold text-orange-500 mb-8 text-center"
+            className="text-xl sm:text-2xl font-semibold text-orange-500 mb-8 text-center"
           >
             CODED MANIFESTATIONS™️
           </motion.h3>
@@ -280,18 +281,18 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg text-gray-600 dark:text-gray-300 mb-12 text-center max-w-4xl mx-auto"
+            className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-4xl mx-auto"
           >
             A next-generation personal transformation and spiritual-wellness platform designed to help people consciously reprogram their mindset, emotions, habits, and belief systems—at scale, through technology.
           </motion.p>
 
           {/* App Interface */}
           <div className="mb-16">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">CODED MANIFESTATIONS™️ App Interface</h4>
+            <h4 className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-6 text-center">CODED MANIFESTATIONS™️ App Interface</h4>
           </div>
 
           {/* Core Description */}
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-16">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -300,7 +301,7 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
               className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all"
             >
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">How It Works</h4>
+              <h4 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">How It Works</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 At its core, CODED MANIFESTATIONS™️ operates on a simple but powerful premise: what you consistently impress upon subconscious mind shapes identity, behavior, and outcomes. The platform delivers this imprinting through daily "coded" affirmations, guided meditations, therapeutic hypnosis, calming sound frequencies, breathwork sessions, and motivational audio—designed to be consumed in short, repeatable sessions that fit seamlessly into real life. Users don't need hours of practice; consistency is engineered into system.
               </p>
@@ -313,7 +314,7 @@ export default function Home() {
               whileHover={{ scale: 1.02 }}
               className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm hover:shadow-lg transition-all"
             >
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Premium Experience</h4>
+              <h4 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">Premium Experience</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 CODED MANIFESTATIONS™️ is built as a premium subscription platform, with a carefully designed freemium funnel that allows users to experience transformation while clearly showcasing value of paid access. Premium users unlock deeper content, advanced audio experiences, and full access to transformation ecosystem. Subscriptions synchronize seamlessly across devices, reinforcing habit formation and retention.
               </p>
@@ -329,14 +330,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <motion.h4 
-              className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center"
+              className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-6 text-center"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >Content Library</motion.h4>
             <motion.p 
-              className="text-lg text-gray-600 dark:text-gray-300 mb-8 text-center"
+              className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -344,7 +345,7 @@ export default function Home() {
             >
               The platform offers a rich, multi-layered content library, including:
             </motion.p>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {[
                 ["Structured affirmation challenges", "Deep manifestation codes for mindset rewiring", "Guided meditations and therapeutic hypnosis", "Life-preserving breathwork sessions"],
                 ["Healing and soothing sound therapies", "Daily motivation and inspirational audio", "Faith-based prayers and meditations", "Christian hypnosis for faith-based users"],
@@ -377,8 +378,8 @@ export default function Home() {
 
           {/* App Screenshots */}
           <div className="mb-16">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Experience Transformation</h4>
-            <div className="grid md:grid-cols-3 gap-8">
+            <h4 className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">Experience Transformation</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <motion.div 
                 className="flex justify-center"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -460,13 +461,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
           >
             <motion.h4 
-              className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
+              className="text-2xl sm:text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >Transform Your Life Today</motion.h4>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <motion.div 
                 className="flex justify-center"
                 initial={{ opacity: 0, x: -30 }}
@@ -542,7 +543,7 @@ export default function Home() {
       </section>
 
       {/* Video Quotes Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -550,7 +551,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="text-3xl font-bold text-white mb-4 text-center"
+            className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -567,7 +568,7 @@ export default function Home() {
           >
             Watch powerful motivational videos to fuel your transformation journey
           </motion.p>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "Believe in Yourself", embed: "https://www.youtube.com/embed/wnHW6o8WMas", author: "Motivational Quotes" },
               { title: "Never Give Up", embed: "https://www.youtube.com/embed/mgmVOuLgFB0", author: "Success Quotes" },
@@ -602,7 +603,7 @@ export default function Home() {
       </section>
 
       {/* Google Ads Banner - Free Users */}
-      <section className="max-w-7xl mx-auto px-6 py-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -611,22 +612,21 @@ export default function Home() {
           className="bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-gray-800 dark:to-gray-700 border-2 border-dashed border-yellow-400 rounded-xl p-6 text-center"
         >
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 }}
           >
             <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Ad</span>
             <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-3">Advertisement</p>
             {/* Google AdSense Banner - inspirational */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg p-4 w-full">
+            <div className="bg-white dark:bg-gray-900 rounded-lg p-2 w-full min-w-[300px] h-[90px] overflow-hidden">
               <ins
                 className="adsbygoogle"
-                style={{ display: 'block' }}
+                style={{ display: 'block', width: '100%', height: '90px' }}
                 data-ad-client="ca-pub-1474614683509926"
                 data-ad-slot="8662403935"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
+                data-ad-format="horizontal"
               />
               <Script id="adsbygoogle-push" strategy="afterInteractive">
                 {`(adsbygoogle = window.adsbygoogle || []).push({});`}
@@ -637,7 +637,7 @@ export default function Home() {
       </section>
 
       {/* News Feeds Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 bg-gray-50 dark:bg-gray-900">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 bg-gray-50 dark:bg-gray-900">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -645,7 +645,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+            className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -653,7 +653,7 @@ export default function Home() {
           >
             Latest News & Updates
           </motion.h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { 
                 title: "New Meditation Tracks Released", 
@@ -696,7 +696,7 @@ export default function Home() {
                     {news.tag}
                   </span>
                   <p className="text-gray-500 dark:text-gray-400 text-sm mb-2">{news.date}</p>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{news.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-3">{news.title}</h3>
                   <motion.p 
                     className="text-gray-600 dark:text-gray-300 text-justify"
                     animate={{ 
@@ -724,7 +724,7 @@ export default function Home() {
       </section>
 
       {/* Motivational Quotes Carousel */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -732,7 +732,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <motion.h2 
-            className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center"
+            className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -787,13 +787,13 @@ export default function Home() {
       </section>
 
       {/* Download Section */}
-      <section className="max-w-7xl mx-auto px-6 py-16 text-center">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Ready to Transform Your Life?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">Ready to Transform Your Life?</h2>
           <p className="text-gray-600 dark:text-gray-300 mb-8">Join thousands of users on their manifestation journey</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <motion.a
@@ -859,16 +859,16 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black bg-opacity-10 py-2">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col items-center gap-6">
-            <h3 className="text-xl font-semibold text-white">Our Community Channels</h3>
-            <div className="flex gap-6">
+      <footer className="bg-black bg-opacity-10 py-4 sm:py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex flex-col items-center gap-4 sm:gap-6">
+            <h3 className="text-lg sm:text-xl font-semibold text-white text-center">Our Community Channels</h3>
+            <div className="flex gap-4 sm:gap-6">
               <motion.a
                 href="https://facebook.com/codedmanifestation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-white p-4 rounded-full shadow-lg"
+                className="bg-gray-200 dark:bg-white p-3 sm:p-4 rounded-full shadow-lg"
                 whileHover={{ scale: 1.15, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -879,14 +879,14 @@ export default function Home() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                   alt="Facebook"
-                  className="w-8 h-8"
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </motion.a>
               <motion.a
                 href="https://instagram.com/codedmanifestation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-white p-4 rounded-full shadow-lg"
+                className="bg-gray-200 dark:bg-white p-3 sm:p-4 rounded-full shadow-lg"
                 whileHover={{ scale: 1.15, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -897,14 +897,14 @@ export default function Home() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
                   alt="Instagram"
-                  className="w-8 h-8"
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </motion.a>
               <motion.a
                 href="https://tiktok.com/@codedmanifestation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-white p-4 rounded-full shadow-lg"
+                className="bg-gray-200 dark:bg-white p-3 sm:p-4 rounded-full shadow-lg"
                 whileHover={{ scale: 1.15, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -915,14 +915,14 @@ export default function Home() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg"
                   alt="TikTok"
-                  className="w-8 h-8"
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </motion.a>
               <motion.a
                 href="https://youtube.com/codedmanifestation"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-200 dark:bg-white p-4 rounded-full shadow-lg"
+                className="bg-gray-200 dark:bg-white p-3 sm:p-4 rounded-full shadow-lg"
                 whileHover={{ scale: 1.15, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, y: 20 }}
@@ -933,11 +933,11 @@ export default function Home() {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
                   alt="YouTube"
-                  className="w-8 h-8"
+                  className="w-6 h-6 sm:w-8 sm:h-8"
                 />
               </motion.a>
             </div>
-            <div className="flex gap-4 text-sm">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm">
               <a 
                 href="https://good2go-5759d.web.app/terms-of-use" 
                 target="_blank" 
@@ -963,10 +963,10 @@ export default function Home() {
                 Cookie Policy
               </a>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-xs sm:text-sm text-center">
               &copy; 2026 CODED MANIFESTATIONS™️ - All Rights Reserved.
             </p>
-            <p className="text-gray-500 text-xs">
+            <p className="text-gray-500 text-xs text-center">
               Designed, Managed and Maintained by NEXATECH®️ LLC™️
             </p>
           </div>
