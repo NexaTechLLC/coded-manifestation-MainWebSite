@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Script from 'next/script';
 import { Heart, Star, Plus, Bell, Sparkles, ArrowRight, Download } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -186,7 +187,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Why Choose Coded Manifestation?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Why Choose CODED MANIFESTATIONS™️?</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
@@ -272,7 +273,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl font-semibold text-orange-500 mb-8 text-center"
           >
-            CODED MANIFESTATIONS™
+            CODED MANIFESTATIONS™️
           </motion.h3>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -286,7 +287,7 @@ export default function Home() {
 
           {/* App Interface */}
           <div className="mb-16">
-            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">Coded Manifestation App Interface</h4>
+            <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">CODED MANIFESTATIONS™️ App Interface</h4>
           </div>
 
           {/* Core Description */}
@@ -301,7 +302,7 @@ export default function Home() {
             >
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">How It Works</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                At its core, CODED MANIFESTATIONS™ operates on a simple but powerful premise: what you consistently impress upon subconscious mind shapes identity, behavior, and outcomes. The platform delivers this imprinting through daily "coded" affirmations, guided meditations, therapeutic hypnosis, calming sound frequencies, breathwork sessions, and motivational audio—designed to be consumed in short, repeatable sessions that fit seamlessly into real life. Users don't need hours of practice; consistency is engineered into system.
+                At its core, CODED MANIFESTATIONS™️ operates on a simple but powerful premise: what you consistently impress upon subconscious mind shapes identity, behavior, and outcomes. The platform delivers this imprinting through daily "coded" affirmations, guided meditations, therapeutic hypnosis, calming sound frequencies, breathwork sessions, and motivational audio—designed to be consumed in short, repeatable sessions that fit seamlessly into real life. Users don't need hours of practice; consistency is engineered into system.
               </p>
             </motion.div>
             <motion.div
@@ -314,7 +315,7 @@ export default function Home() {
             >
               <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Premium Experience</h4>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                CODED MANIFESTATIONS™ is built as a premium subscription platform, with a carefully designed freemium funnel that allows users to experience transformation while clearly showcasing value of paid access. Premium users unlock deeper content, advanced audio experiences, and full access to transformation ecosystem. Subscriptions synchronize seamlessly across devices, reinforcing habit formation and retention.
+                CODED MANIFESTATIONS™️ is built as a premium subscription platform, with a carefully designed freemium funnel that allows users to experience transformation while clearly showcasing value of paid access. Premium users unlock deeper content, advanced audio experiences, and full access to transformation ecosystem. Subscriptions synchronize seamlessly across devices, reinforcing habit formation and retention.
               </p>
             </motion.div>
           </div>
@@ -617,17 +618,19 @@ export default function Home() {
           >
             <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Ad</span>
             <p className="text-gray-500 dark:text-gray-400 text-sm mt-2 mb-3">Advertisement - Upgrade to Premium for ad-free experience</p>
-            {/* Google AdSense Placeholder */}
+            {/* Google AdSense Banner - inspirational */}
             <div className="bg-white dark:bg-gray-900 rounded-lg p-4 w-full">
               <ins
                 className="adsbygoogle"
-                style={{ display: 'block', width: '100%' }}
-                data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
-                data-ad-slot="XXXXXXXXXX"
+                style={{ display: 'block' }}
+                data-ad-client="ca-pub-1474614683509926"
+                data-ad-slot="8662403935"
                 data-ad-format="auto"
                 data-full-width-responsive="true"
               />
-              <p className="text-gray-400 text-xs mt-2">Google AdSense Banner Placeholder - Replace with your ad code</p>
+              <Script id="adsbygoogle-push" strategy="afterInteractive">
+                {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+              </Script>
             </div>
           </motion.div>
         </motion.div>
@@ -664,14 +667,14 @@ export default function Home() {
                 date: "March 2026", 
                 excerpt: "We are thrilled to announce that our community has grown to 100,000 active users worldwide!",
                 tag: "Community",
-                fullContent: "Today marks an incredible milestone for the Coded Manifestations family - we have reached 100,000 active users across the globe! This achievement represents more than just a number; it signifies a growing movement of individuals committed to personal transformation and conscious living. Our community spans 45 countries, with users from all walks of life sharing their journey toward mindfulness and manifestation. To celebrate this milestone, we are launching a special Community Spotlight series featuring stories from our members. We have also doubled our support team to ensure every user receives the guidance they need. Thank you for being part of this journey. Together, we are creating ripples of positive change across the world. Here's to the next 100,000!"
+                fullContent: "Today marks an incredible milestone for the CODED MANIFESTATIONS™️ family - we have reached 100,000 active users across the globe! This achievement represents more than just a number; it signifies a growing movement of individuals committed to personal transformation and conscious living. Our community spans 45 countries, with users from all walks of life sharing their journey toward mindfulness and manifestation. To celebrate this milestone, we are launching a special Community Spotlight series featuring stories from our members. We have also doubled our support team to ensure every user receives the guidance they need. Thank you for being part of this journey. Together, we are creating ripples of positive change across the world. Here's to the next 100,000!"
               },
               { 
                 title: "Featured: Success Stories", 
                 date: "March 2026", 
                 excerpt: "Read inspiring stories from users who transformed their lives using our platform.",
                 tag: "Stories",
-                fullContent: "Our Success Stories feature is now live! We have collected incredible testimonials from users who have experienced profound transformations using Coded Manifestations. Meet Sarah from Toronto, who overcame anxiety and launched her dream business after 90 days of consistent practice. Read about Marcus from London, who used our faith-based content to find spiritual grounding during difficult times. Discover how Jennifer from Sydney manifested her ideal relationship by aligning her daily affirmations with her core values. These stories showcase the real-world impact of intentional mindset work. Each story includes the specific tools and practices used, along with tips you can apply to your own journey. Visit the new Success Stories section in the app to read these inspiring accounts and submit your own story for a chance to be featured and win a year of Premium access!"
+                fullContent: "Our Success Stories feature is now live! We have collected incredible testimonials from users who have experienced profound transformations using CODED MANIFESTATIONS™️. Meet Sarah from Toronto, who overcame anxiety and launched her dream business after 90 days of consistent practice. Read about Marcus from London, who used our faith-based content to find spiritual grounding during difficult times. Discover how Jennifer from Sydney manifested her ideal relationship by aligning her daily affirmations with her core values. These stories showcase the real-world impact of intentional mindset work. Each story includes the specific tools and practices used, along with tips you can apply to your own journey. Visit the new Success Stories section in the app to read these inspiring accounts and submit your own story for a chance to be featured and win a year of Premium access!"
               }
             ].map((news, index) => (
               <motion.article
@@ -935,10 +938,10 @@ export default function Home() {
               </motion.a>
             </div>
             <p className="text-gray-400 text-sm">
-              &copy; 2026 Coded Manifestations&trade; - All Rights Reserved.
+              &copy; 2026 CODED MANIFESTATIONS™️ - All Rights Reserved.
             </p>
             <p className="text-gray-500 text-xs">
-              Designed, Managed and Maintained by NexaTech LLC&trade;
+              Designed, Managed and Maintained by NEXATECH®️ LLC™️
             </p>
           </div>
         </div>

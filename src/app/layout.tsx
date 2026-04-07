@@ -14,27 +14,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coded Manifestation - Transform Your Mindset",
+  title: "CODED MANIFESTATIONS™️ - Transform Your Mindset",
   description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change through the power of daily affirmations.",
   keywords: ["affirmations", "manifestation", "mindfulness", "meditation", "positivity", "wellness"],
-  authors: [{ name: "NexaTech LLC" }],
-  creator: "NexaTech LLC",
-  publisher: "NexaTech LLC",
+  authors: [{ name: "NEXATECH®️ LLC" }],
+  creator: "NEXATECH®️ LLC",
+  publisher: "NEXATECH®️ LLC",
   metadataBase: new URL("https://www.codedmanifestations.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Coded Manifestation - Transform Your Mindset",
+    title: "CODED MANIFESTATIONS™️ - Transform Your Mindset",
     description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change.",
     url: "https://www.codedmanifestations.com",
-    siteName: "Coded Manifestation",
+    siteName: "CODED MANIFESTATIONS™️",
     images: [
       {
         url: "/1.png",
         width: 1200,
         height: 630,
-        alt: "Coded Manifestation - Transform Your Mindset",
+        alt: "CODED MANIFESTATIONS™️ - Transform Your Mindset",
       },
     ],
     locale: "en_US",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Coded Manifestation - Transform Your Mindset",
+    title: "CODED MANIFESTATIONS™️ - Transform Your Mindset",
     description: "Transform your mindset with daily affirmations. Cultivate positivity, boost confidence, and create lasting change.",
     images: ["/1.png"],
     creator: "@codedmanifestation",
@@ -71,6 +71,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <meta name="google-adsense-account" content="ca-pub-1474614683509926" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1474614683509926"
           crossOrigin="anonymous"></script>
       </head>
