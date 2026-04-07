@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Heart, Star, Plus, Bell, Sparkles, ArrowRight, Download } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -14,13 +15,15 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="min-h-screen relative bg-cover bg-center" 
-        style={{ 
-          backgroundImage: 'url("/1.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
+      <section className="min-h-screen relative">
+        <Image
+          src="/1.png"
+          alt="Hero Background"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
         {/* Navigation */}
         <nav className="relative z-10 flex justify-end items-center px-6 py-4">
           <div className="flex items-center gap-4">
@@ -96,9 +99,11 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center gap-3 shadow-lg border border-gray-700"
               >
-                <img
+                <Image
                   src="/browser-logo.avif"
                   alt="Browser"
+                  width={32}
+                  height={32}
                   className="w-8 h-8 rounded"
                 />
                 <span className="text-sm">Login to<br />Web APP</span>
@@ -380,14 +385,21 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                <motion.img 
-                  src="/2.png" 
-                  alt="App Screen 2" 
-                  className="rounded-lg shadow-lg max-w-full"
-                  style={{ maxHeight: '400px' }}
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
                   whileHover={{ scale: 1.08, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
                   transition={{ duration: 0.3 }}
-                />
+                >
+                  <Image
+                    src="/2.png"
+                    alt="App Screen 2"
+                    width={300}
+                    height={400}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
               </motion.div>
               <motion.div 
                 className="flex justify-center"
@@ -396,14 +408,21 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <motion.img 
-                  src="/3.png" 
-                  alt="App Screen 3" 
-                  className="rounded-lg shadow-lg max-w-full"
-                  style={{ maxHeight: '400px' }}
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
                   whileHover={{ scale: 1.08, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
                   transition={{ duration: 0.3 }}
-                />
+                >
+                  <Image
+                    src="/3.png"
+                    alt="App Screen 3"
+                    width={300}
+                    height={400}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
               </motion.div>
               <motion.div 
                 className="flex justify-center"
@@ -412,14 +431,21 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                <motion.img 
-                  src="/4.png" 
-                  alt="App Screen 4" 
-                  className="rounded-lg shadow-lg max-w-full"
-                  style={{ maxHeight: '400px' }}
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
                   whileHover={{ scale: 1.08, boxShadow: "0 20px 60px rgba(0,0,0,0.3)" }}
                   transition={{ duration: 0.3 }}
-                />
+                >
+                  <Image
+                    src="/4.png"
+                    alt="App Screen 4"
+                    width={300}
+                    height={400}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
               </motion.div>
             </div>
           </div>
@@ -447,7 +473,24 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/5.png" alt="Brand Experience" className="rounded-lg shadow-lg max-w-full" style={{ maxHeight: '400px' }} />
+              <motion.div
+                className="relative rounded-lg shadow-lg overflow-hidden mb-8"
+                style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                whileHover={{ scale: 1.05 }}
+              >
+                <Image
+                  src="/5.png"
+                  alt="Brand Experience"
+                  width={300}
+                  height={400}
+                  className="rounded-lg object-contain w-full h-auto"
+                  loading="lazy"
+                />
+              </motion.div>
             </motion.div>
             <motion.p 
               className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-4xl mx-auto"
@@ -484,7 +527,20 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <img src="/6.png" alt="App Experience 6" className="rounded-lg shadow-lg max-w-full" style={{ maxHeight: '400px' }} />
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image
+                    src="/6.png"
+                    alt="App Experience 6"
+                    width={300}
+                    height={400}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
               </motion.div>
               <motion.div 
                 className="flex justify-center"
@@ -494,7 +550,20 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <img src="/2 - No Texts.png" alt="App Experience Clean" className="rounded-lg shadow-lg max-w-full" style={{ maxHeight: '400px' }} />
+                <motion.div
+                  className="relative rounded-lg shadow-lg overflow-hidden"
+                  style={{ maxHeight: '400px', width: '100%', maxWidth: '300px' }}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <Image
+                    src="/2 - No Texts.png"
+                    alt="App Experience Clean"
+                    width={300}
+                    height={400}
+                    className="rounded-lg object-contain w-full h-auto"
+                    loading="lazy"
+                  />
+                </motion.div>
               </motion.div>
             </div>
           </motion.div>
@@ -799,13 +868,19 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-gray-500 dark:text-gray-400 text-sm mb-4">Or scan to download the app</p>
-            <motion.img
-              src="/Scancode.jpg"
-              alt="Scan QR Code to Download App"
-              className="w-40 h-40 rounded-xl shadow-lg"
+            <motion.div
+              className="relative w-40 h-40 rounded-xl shadow-lg overflow-hidden"
               whileHover={{ scale: 1.1, boxShadow: "0 20px 40px rgba(0,0,0,0.2)" }}
               transition={{ duration: 0.3 }}
-            />
+            >
+              <Image
+                src="/Scancode.jpg"
+                alt="Scan QR Code to Download App"
+                fill
+                className="rounded-xl object-cover"
+                sizes="160px"
+              />
+            </motion.div>
           </motion.div>
         </motion.div>
       </section>
