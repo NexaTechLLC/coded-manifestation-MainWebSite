@@ -968,7 +968,7 @@ export default function Home() {
               &copy; 2026 Coded Manifestations&trade; - All Rights Reserved.
             </p>
             <p className="text-gray-500 text-xs">
-              Built by Nexatech LLC&trade;
+              Designed, Managed and Maintained by NexaTech LLC&trade;
             </p>
           </div>
         </div>
