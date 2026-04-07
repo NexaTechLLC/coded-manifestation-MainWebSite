@@ -937,6 +937,32 @@ export default function Home() {
                 />
               </motion.a>
             </div>
+            <div className="flex gap-4 text-sm">
+              <a 
+                href="https://good2go-5759d.web.app/terms-of-use" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white underline transition-colors"
+              >
+                Terms of Use
+              </a>
+              <a 
+                href="https://good2go-5759d.web.app/privacy-policy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white underline transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a 
+                href="https://good2go-5759d.web.app/cookie-policy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white underline transition-colors"
+              >
+                Cookie Policy
+              </a>
+            </div>
             <p className="text-gray-400 text-sm">
               &copy; 2026 CODED MANIFESTATIONS™️ - All Rights Reserved.
             </p>
