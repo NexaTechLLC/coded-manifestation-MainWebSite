@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="h-screen max-h-screen relative overflow-hidden">
+      <section className="h-screen relative">
         <Image
           src="/1.png"
           alt="Hero Background"
@@ -43,25 +43,25 @@ export default function Home() {
         </nav>
       
         {/* Hero Content */}
-        <div className="relative max-w-4xl mx-auto px-3 sm:px-6 pt-4 sm:pt-24 pb-4 sm:pb-48 flex flex-col justify-start h-full">
+        <div className="absolute inset-x-0 top-16 bottom-0 flex items-center justify-center px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-3 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30"
+            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30 max-h-[calc(100vh-6rem)] overflow-y-auto"
           >
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-2xl sm:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-6 text-center drop-shadow-lg"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 text-center drop-shadow-lg"
             >
               Transform Your Mindset with
               <motion.span 
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="block text-orange-400 dark:text-orange-300 text-xl sm:text-4xl lg:text-5xl"
+                className="block text-orange-400 dark:text-orange-300"
               >
                 Daily Affirmations
               </motion.span>
@@ -70,7 +70,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-sm sm:text-xl text-gray-100 dark:text-gray-300 mb-3 sm:mb-8 max-w-2xl mx-auto text-center drop-shadow-md"
+              className="text-lg sm:text-xl text-gray-100 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto text-center drop-shadow-md"
             >
               Cultivate positivity, boost confidence, and create lasting change through the power of daily affirmations.
             </motion.p>
@@ -80,16 +80,16 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 1 }}
               whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(249, 115, 22, 0.5)" }}
               whileTap={{ scale: 0.95 }}
-              className="bg-orange-500 dark:bg-orange-600 text-white px-4 sm:px-8 py-2 sm:py-4 rounded-full font-semibold hover:bg-orange-600 dark:hover:bg-orange-700 transition-colors flex items-center gap-2 mx-auto shadow-lg text-xs sm:text-base"
+              className="bg-orange-500 dark:bg-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold hover:bg-orange-600 dark:hover:bg-orange-700 transition-colors flex items-center gap-2 mx-auto shadow-lg text-sm sm:text-base"
             >
-              <Download className="w-3 h-3 sm:w-5 sm:h-5" />
+              <Download className="w-4 h-4 sm:w-5 sm:h-5" />
               Download Now
             </motion.button>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="mt-3 sm:mt-8 flex flex-row gap-2 sm:gap-4 justify-center items-center">
+              className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <motion.a
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -99,16 +99,16 @@ export default function Home() {
                 href="https://app.codedmanifestations.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center gap-2 sm:gap-3 shadow-lg border border-gray-700"
+                className="bg-black text-white px-6 py-3 rounded-xl font-semibold hover:bg-gray-800 transition-all flex items-center gap-3 shadow-lg border border-gray-700"
               >
                 <Image
                   src="/browser-logo.avif"
                   alt="Browser"
-                  width={24}
-                  height={24}
-                  className="w-5 h-5 sm:w-8 sm:h-8 rounded"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 rounded"
                 />
-                <span className="text-xs sm:text-sm">Login to<br />Web APP</span>
+                <span className="text-sm">Login to<br />Web APP</span>
               </motion.a>
               <motion.a 
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -123,7 +123,7 @@ export default function Home() {
                 <img 
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" 
                   alt="Download on the App Store" 
-                  className="h-10 sm:h-16 w-auto"
+                  className="h-16 w-auto"
                 />
               </motion.a>
               <motion.a 
@@ -139,7 +139,7 @@ export default function Home() {
                 <img 
                   src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
                   alt="Get it on Google Play" 
-                  className="h-10 sm:h-16 w-auto"
+                  className="h-16 w-auto"
                 />
               </motion.a>
             </motion.div>
