@@ -43,12 +43,12 @@ export default function Home() {
         </nav>
       
         {/* Hero Content */}
-        <div className="absolute inset-x-0 top-16 bottom-0 flex items-center justify-center px-4 sm:px-6">
+        <div className="absolute inset-x-0 top-16 flex items-start justify-center px-4 sm:px-6 pt-8 sm:pt-16 pb-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30 max-h-[calc(100vh-6rem)] overflow-y-auto"
+            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30"
           >
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
