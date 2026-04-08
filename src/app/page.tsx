@@ -48,7 +48,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30"
+            className="bg-gray-900 bg-opacity-20 backdrop-blur-md p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-purple-700/30 w-full max-w-md sm:max-w-4xl"
           >
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
