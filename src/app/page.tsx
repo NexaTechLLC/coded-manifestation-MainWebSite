@@ -939,25 +939,19 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-xs sm:text-sm">
               <a 
-                href="https://good2go-5759d.web.app/terms-of-use" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/terms-of-use"
                 className="text-gray-400 hover:text-white underline transition-colors"
               >
                 Terms of Use
               </a>
               <a 
-                href="https://good2go-5759d.web.app/privacy-policy" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/privacy-policy"
                 className="text-gray-400 hover:text-white underline transition-colors"
               >
                 Privacy Policy
               </a>
               <a 
-                href="https://good2go-5759d.web.app/cookie-policy" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                href="/cookie-policy"
                 className="text-gray-400 hover:text-white underline transition-colors"
               >
                 Cookie Policy
