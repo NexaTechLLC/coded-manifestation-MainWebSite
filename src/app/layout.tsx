@@ -75,6 +75,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="google-site-verification" content="FkbCrqq9HGDcAVFk0SWHsRwL5J9vNtFKj5Np58_YgmY" />
         <meta name="google-adsense-account" content="ca-pub-1474614683509926" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1474614683509926"
           crossOrigin="anonymous"></script>
