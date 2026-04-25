@@ -77,6 +77,18 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="google-site-verification" content="FkbCrqq9HGDcAVFk0SWHsRwL5J9vNtFKj5Np58_YgmY" />
         <meta name="google-adsense-account" content="ca-pub-1474614683509926" />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6F3359D8T"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-L6F3359D8T');
+            `,
+          }}
+        />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1474614683509926"
           crossOrigin="anonymous"></script>
       </head>
